@@ -1,0 +1,36 @@
+---
+title: "Johdatus tieteelliseen laskentaan yhteiskuntatieteissä"
+---
+
+`Sivusto generoitu viimeksi: `r Sys.time()``
+
+Parahin lukija, 
+
+Tämä sivusto toimii Kardemumman yliopiston *Johdatus tieteelliseen laskentaan yhteiskuntatieteissä* -kurssin opetuksen alustana. Kaikki kurssiin liittyvät aineisto on avoimesti lisensoitua ja käytettävissä myös kurssin jälkeen.
+
+Sivusto houstataan [Github](https://github.com/)-koodinjakopalvelussa osoitteessa: <https://muuankarski.github.io/rkurssi>. Sivuston lähdekoodin löydät vastaavasta repositorysta: <https://github.com/muuankarski/rkurssi>
+
+## Kurssin sisältö
+
+| pvm      | teema     | materiaalit | keskustelu |
+| -------  | --------  | ----------  | ---------  |
+| 20160901 | Johdanto  | solu        | solu       |
+| 20160901 | Johdanto  | solu        | solu       |
+| pvm      | teema     | materiaalit | keskustelu |
+| -------  | --------  | ----------  | ---------  |
+| 20160901 | Johdanto  | solu        | solu       |
+| 20160901 | Johdanto  | solu        | solu       |
+| 20160901 | Johdanto  | solu        | solu       |
+| 20160901 | Johdanto  | solu        | solu       |
+
+
+## Kurssikalenteri
+
+
+<iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=rbarcmn1t5ci5endg3phndkc5c%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=Europe%2FHelsinki" style="border-width:0" width="500" height="600" frameborder="0" scrolling="no"></iframe>
+
+
+
+<a href="https://www.r-project.org/">
+<img src="https://www.r-project.org/logo/Rlogo.png" alt="Smiley face" style="float:right;width:150px;">
+</a>

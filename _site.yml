@@ -1,0 +1,27 @@
+name: "kela_r_help"
+navbar:
+  title: "Johdatus tieteelliseen laskentaan"
+  type: inverse
+  left:
+    - text: "Kurssin sisältö"
+      icon: fa-random
+      href: content.html
+    - text: "Ohjelmistoympäristö"
+      icon: fa-random
+      href: environment.html
+    - text: "Kelan tutkimusaineistot"
+      icon: fa-table
+      menu:
+        - text: "EU-SILC -data Kelassa"
+          icon: fa-table
+          href: eu_silc.html
+  right:
+    - icon: fa-info
+      href: http://markuskainu.fi
+output:
+  html_document:
+    theme: yeti
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css

@@ -1,0 +1,41 @@
+---
+title: "Kurssin sisältö"
+output: 
+  html_document: 
+    toc: true
+    toc_float: true
+    number_sections: yes
+    code_folding: show
+---
+
+
+# Johdanto
+
+## Ohjelmistoympäristö
+
+
+
+# Bash-skriptaus
+
+
+
+# Automatisointi
+
+
+
+# Testit
+
+
+
+
+# Data-analyysi
+
+
+
+
+
+# Tiedon visualisointi
+
+
+
+

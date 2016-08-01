@@ -1,0 +1,45 @@
+---
+title: "Videos"
+---
+
+# Videoita useR2016-konferenssista
+
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016?sort=sequential&direction=desc#theSessions>
+
+
+## Teaching
+
+- <https://channel9.msdn.com/events/useR-international-R-User-conference/useR2016/A-first-year-undergraduate-data-science-course>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Statistical-Thinking-in-a-Data-Science-Course>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Revolutionize-how-you-teach-and-blog-add-interactivity>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Using-Jupyter-notebooks-with-R-in-the-classroom>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Teaching-R-to-200-people-in-a-week>
+
+
+## Rstudio
+
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Notebooks-with-R-Markdown>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/flexdashboard-Easy-interactive-dashboards-for-R>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Towards-a-grammar-of-interactive-graphics>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Shiny-Gadgets-Interactive-tools-for-Programming-and-Data-Analysis>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Authoring-Books-with-R-Markdown>
+
+## Domain spesific
+
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Spatial-data-in-R-simple-features-and-future-perspectives>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/How-to-keep-your-R-code-simple-while-tackling-big-datasets>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/broom-Converting-statistical-models-to-tidy-data-frames>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Using-Shiny-modules-to-build-more-complex-and-more-manageable-apps>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Practical-tools-for-exploratory-web-graphics>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/GNU-make-for-reproducible-data-analysis-using-R-and-other-statistical-software>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/A-spatial-policy-tool-for-cycling-potential-in-England>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/FiveThirtyEights-data-journalism-workflow-with-R>
+
+## Industry
+
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/R-at-Microsoft>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/RServer-Operationalizing-R-at-Electronic-Arts>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/R-at-Google-with-Craig-Citro>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/R-for-Big-Data-and-Applications-Using-R-at-Oracle>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Changing-lives-with-Data-Science-at-Microsoft>
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Bringing-the-Power-of-R-to-Citizen-Data-Scientists>
