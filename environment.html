@@ -174,16 +174,62 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Johdatus tieteelliseen laskentaan</a>
+      <a class="navbar-brand" href="index.html">Data-analyysin perusteet R-kielellä</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="content.html">
-    <span class="fa fa-random"></span>
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-list-alt"></span>
      
     Kurssin sisältö
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="content_1_intro.html">
+        <span class="fa fa-table"></span>
+         
+        Johdanto
+      </a>
+    </li>
+    <li>
+      <a href="content_2_import.html">
+        <span class="fa fa-line-chart"></span>
+         
+        Datalähteet ja datan tuominen
+      </a>
+    </li>
+    <li>
+      <a href="content_3_tidy.html">
+        <span class="fa fa-line-chart"></span>
+         
+        Datan siivoaminen
+      </a>
+    </li>
+    <li>
+      <a href="content_4_transform.html">
+        <span class="fa fa-line-chart"></span>
+         
+        Datan muokkaus
+      </a>
+    </li>
+    <li>
+      <a href="content_5_visualise.html">
+        <span class="fa fa-line-chart"></span>
+         
+        Datan visualisoiminen
+      </a>
+    </li>
+    <li>
+      <a href="content_6_model.html">
+        <span class="fa fa-line-chart"></span>
+         
+        Datan mallintaminen
+      </a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="environment.html">
@@ -191,24 +237,6 @@ $(document).ready(function () {
      
     Ohjelmistoympäristö
   </a>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-table"></span>
-     
-    Kelan tutkimusaineistot
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="eu_silc.html">
-        <span class="fa fa-table"></span>
-         
-        EU-SILC -data Kelassa
-      </a>
-    </li>
-  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -232,8 +260,37 @@ $(document).ready(function () {
 </div>
 
 
-<div id="mita-asennetaan" class="section level1">
-<h1>Mita asennetaan</h1>
+<p>Kurssilla käytettävät ohjelmistot ovat poikkeuksestta <a href="https://fi.wikipedia.org/wiki/Vapaa_ohjelmisto">vapaita</a> ja <a href="https://fi.wikipedia.org/wiki/Avoin_l%C3%A4hdekoodi">avoimen lähdekoodin ohjelmistoja</a>, joita voi käyttää sekä Windowsissa, OSX:ssä että eri linux-jakeluissa.</p>
+<div id="ohjelmistot" class="section level1">
+<h1>Ohjelmistot</h1>
+<div id="r" class="section level2">
+<h2>R</h2>
+<p><a href="https://www.r-project.org/"> <img src="https://www.r-project.org/logo/Rlogo.png" alt="Smiley face" style="float:right;width:150px;"> </a></p>
+<p>–include-before-body /tmp/RtmpEJDALG/rmarkdown-str55a516caa944.html –variable navbar=1 –variable body_padding=45 –variable header_padding=50 –variable ‘theme:yeti’ –include-in-header /tmp/RtmpEJDALG/rmarkdown-str55a5eff3940.html –mathjax –variable ‘mathjax-url:<a href="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" class="uri">https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML</a>’ –no-highlight –variable highlightjs=site_libs/highlight –variable highlightjs-theme=textmate –variable navigationjs=site_libs/navigation-1.1 –include-after-body footer.html</p>
+</div>
+<div id="git" class="section level2">
+<h2>git</h2>
+<p>–include-before-body /tmp/RtmpEJDALG/rmarkdown-str55a516caa944.html –variable navbar=1 –variable body_padding=45 –variable header_padding=50 –variable ‘theme:yeti’ –include-in-header /tmp/RtmpEJDALG/rmarkdown-str55a5eff3940.html –mathjax –variable ‘mathjax-url:<a href="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" class="uri">https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML</a>’ –no-highlight –variable highlightjs=site_libs/highlight –variable highlightjs-theme=textmate –variable navigationjs=site_libs/navigation-1.1 –include-after-body footer.html</p>
+</div>
+<div id="shell" class="section level2">
+<h2>shell</h2>
+<p>–include-before-body /tmp/RtmpEJDALG/rmarkdown-str55a516caa944.html –variable navbar=1 –variable body_padding=45 –variable header_padding=50 –variable ‘theme:yeti’ –include-in-header /tmp/RtmpEJDALG/rmarkdown-str55a5eff3940.html –mathjax –variable ‘mathjax-url:<a href="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" class="uri">https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML</a>’ –no-highlight –variable highlightjs=site_libs/highlight –variable highlightjs-theme=textmate –variable navigationjs=site_libs/navigation-1.1 –include-after-body footer.html</p>
+</div>
+<div id="github-koodinjakopalvelu" class="section level2">
+<h2>Github-koodinjakopalvelu</h2>
+<p><a href="https://github.com">Github</a> ei ole ohjelmisto, vaan kenties suosituin lähdekoodin jakamisen ja yhdessä ohjelmoimisen (social coding) mahdollistava verkkopalvelu. Kurssille osallistuminen edellyttää Github:iin rekisteröitymistä.</p>
+</div>
+</div>
+<div id="ymparistot" class="section level1">
+<h1>Ympäristöt</h1>
+<div id="pilvessa" class="section level2">
+<h2>Pilvessä</h2>
+<p>Kurssin ensisijainen laskentaympäristö on <a href="http://csc,fi">Tieteen tietotekniikan keskuksen (CSC)</a> <em>Pouta Blueprints</em> palvelimilla, joita opiskelijat voivat käyttää haka-verkon kautta pelkkää selainta käyttöen joko mikroluokkien koneilla tai omalla koneella.</p>
+</div>
+</div>
+<div id="paikalliset-asennukset-omille-koneille" class="section level1">
+<h1>Paikalliset asennukset omille koneille</h1>
+<p>Kurssin edetessä</p>
 </div>
 
 <br>
