@@ -1,0 +1,24 @@
+---
+title: "Johdanto"
+output: 
+  html_document: 
+    toc: true
+    toc_float: true
+    number_sections: yes
+    code_folding: show
+---
+
+
+# R-kielen taustaa ja nykytila
+
+- [Open research methods in computational social sciences and humanities: introducing R (Kainu 2014)](https://digihist.se/5-metoder-inom-digital-historia/fordjupning-open-research-methods-in-computational-social-sciences-and-humanities-introducing-r/)
+
+
+# Kurssilla käytettävä R-kielen murre eli ns. "Hadleyverse"
+
+
+![](graphics/wickham_cycle.png)
+
+
+
+

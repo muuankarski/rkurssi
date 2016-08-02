@@ -1,20 +1,32 @@
 name: "kela_r_help"
 navbar:
-  title: "Johdatus tieteelliseen laskentaan"
+  title: "Data-analyysin perusteet R-kielellä"
   type: inverse
   left:
     - text: "Kurssin sisältö"
-      icon: fa-random
-      href: content.html
+      icon: fa-list-alt
+      menu:
+        - text: "Johdanto"
+          icon: fa-table
+          href: content_1_intro.html
+        - text: "Datalähteet ja datan tuominen"
+          icon: fa-line-chart
+          href: content_2_import.html
+        - text: "Datan siivoaminen"
+          icon: fa-line-chart
+          href: content_3_tidy.html
+        - text: "Datan muokkaus"
+          icon: fa-line-chart
+          href: content_4_transform.html
+        - text: "Datan visualisoiminen"
+          icon: fa-line-chart
+          href: content_5_visualise.html          
+        - text: "Datan mallintaminen"
+          icon: fa-line-chart
+          href: content_6_model.html          
     - text: "Ohjelmistoympäristö"
       icon: fa-random
       href: environment.html
-    - text: "Kelan tutkimusaineistot"
-      icon: fa-table
-      menu:
-        - text: "EU-SILC -data Kelassa"
-          icon: fa-table
-          href: eu_silc.html
   right:
     - icon: fa-info
       href: http://markuskainu.fi

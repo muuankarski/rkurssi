@@ -2,5 +2,40 @@
 title: "Ohjelmistoymparisto"
 ---
 
-# Mita asennetaan
+Kurssilla käytettävät ohjelmistot ovat poikkeuksestta [vapaita](https://fi.wikipedia.org/wiki/Vapaa_ohjelmisto) ja [avoimen lähdekoodin ohjelmistoja](https://fi.wikipedia.org/wiki/Avoin_l%C3%A4hdekoodi), joita voi käyttää sekä Windowsissa, OSX:ssä että eri linux-jakeluissa.
 
+
+# Ohjelmistot
+
+
+## R
+
+<a href="https://www.r-project.org/">
+<img src="https://www.r-project.org/logo/Rlogo.png" alt="Smiley face" style="float:right;width:150px;">
+</a>
+
+--include-before-body /tmp/RtmpEJDALG/rmarkdown-str55a516caa944.html --variable navbar=1 --variable body_padding=45 --variable header_padding=50 --variable 'theme:yeti' --include-in-header /tmp/RtmpEJDALG/rmarkdown-str55a5eff3940.html --mathjax --variable 'mathjax-url:https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --no-highlight --variable highlightjs=site_libs/highlight --variable highlightjs-theme=textmate --variable navigationjs=site_libs/navigation-1.1 --include-after-body footer.html
+
+
+## git
+
+--include-before-body /tmp/RtmpEJDALG/rmarkdown-str55a516caa944.html --variable navbar=1 --variable body_padding=45 --variable header_padding=50 --variable 'theme:yeti' --include-in-header /tmp/RtmpEJDALG/rmarkdown-str55a5eff3940.html --mathjax --variable 'mathjax-url:https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --no-highlight --variable highlightjs=site_libs/highlight --variable highlightjs-theme=textmate --variable navigationjs=site_libs/navigation-1.1 --include-after-body footer.html
+
+## shell
+
+--include-before-body /tmp/RtmpEJDALG/rmarkdown-str55a516caa944.html --variable navbar=1 --variable body_padding=45 --variable header_padding=50 --variable 'theme:yeti' --include-in-header /tmp/RtmpEJDALG/rmarkdown-str55a5eff3940.html --mathjax --variable 'mathjax-url:https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --no-highlight --variable highlightjs=site_libs/highlight --variable highlightjs-theme=textmate --variable navigationjs=site_libs/navigation-1.1 --include-after-body footer.html
+
+## Github-koodinjakopalvelu
+
+[Github](https://github.com) ei ole ohjelmisto, vaan kenties suosituin lähdekoodin jakamisen ja yhdessä ohjelmoimisen (social coding) mahdollistava verkkopalvelu. Kurssille osallistuminen edellyttää Github:iin rekisteröitymistä.
+
+# Ympäristöt
+
+## Pilvessä
+
+Kurssin ensisijainen laskentaympäristö on [Tieteen tietotekniikan keskuksen (CSC)](http://csc,fi) *Pouta Blueprints* palvelimilla, joita opiskelijat voivat käyttää haka-verkon kautta pelkkää selainta käyttöen joko mikroluokkien koneilla tai omalla koneella.
+
+
+# Paikalliset asennukset omille koneille
+
+Kurssin edetessä

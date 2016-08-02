@@ -1,0 +1,24 @@
+---
+title: "Datan muokkaaminen"
+output: 
+  html_document: 
+    toc: true
+    toc_float: true
+    number_sections: yes
+    code_folding: show
+---
+
+
+# Johdanto
+
+--include-before-body /tmp/RtmpEJDALG/rmarkdown-str55a516caa944.html --variable navbar=1 --variable body_padding=45 --variable header_padding=50 --variable 'theme:yeti' --include-in-header /tmp/RtmpEJDALG/rmarkdown-str55a5eff3940.html --mathjax --variable 'mathjax-url:https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --no-highlight --variable highlightjs=site_libs/highlight --variable highlightjs-theme=textmate --variable navigationjs=site_libs/navigation-1.1 --include-after-body footer.html
+
+
+## "Hadleyverse"
+
+
+![](graphics/wickham_cycle.png)
+
+
+
+
