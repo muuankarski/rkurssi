@@ -9,14 +9,77 @@ output:
 ---
 
 
-# Johdanto
+# Ennakkotehtävät
 
 
-## "Hadleyverse"
+## Lue
 
 
-![](graphics/wickham_cycle.png)
+## Katso
+
+
+- Getting Data into R <https://vimeo.com/130548869> 0.00 -> 
+
+# Paketteja erilaisille datalähteille
+
+## Paikalliset data ie. datan lukeminen levyltä
+
+| Data | Paketti | Vaihtoehdot |
+| ---  | ------  | ---------   |
+| tilasto-ohjelmat   | [haven]()  | [foreign](), [sas7bdat](), [readstata13]() |
+| Excel               | [readxl]() | [gdata](), [openxlsx](), [XLConnect](), [xlsx]() |
+| Tekstidatat         | [readr]()  | [base](), [data.table]() |
+
+
+## Datan lukeminen tietokannoista
+
+- [DBI](https://cran.r-project.org/web/packages/DBI/index.html) A database interface definition for communication between R and relational database management systems
+
+
+
+```{r dbi, eval=FALSE}
+# 1) Load the DBI package
+library(DBI)
+
+# 2) Connect to a spesific database
+db <- dbConnect(RPostgres::Posgres(), user, pass, ...)
+db <- dbConnect(RMySQL::MySQL(), user, pass, ...)
+db <- dbConnect(RSQLite::::SQLite(), path)
+
+# 3) Execute a query
+dbGetQuery(db, "SELECT * FROM mtcars")
+
+# 4) Be polite and close connection
+dbDisconnect(db)
+```
 
 
 
 
+
+## Datan lukeminen tilastotietokantojen rajapinnoista
+
+- [sotkanet](https://cran.r-project.org/web/packages/sotkanet/index.html) Tools for Sotkanet Open Data Portal
+- [pxweb](https://cran.r-project.org/web/packages/pxweb/index.html) R Interface to the PX-Web/PC-Axis API (Tilastokeskus, Statistics Sweden etc.)
+- [eurostat](https://cran.r-project.org/web/packages/eurostat/index.html) Tools to download data from the Eurostat database <http://ec.europa.eu/eurostat> together with search and manipulation utilities.
+- [WDI](https://cran.r-project.org/web/packages/WDI/index.html) Search, extract and format data from the World Bank's World Development Indicators
+- [FAOSTAT](https://cran.r-project.org/web/packages/FAOSTAT/index.html) Download Data from the FAOSTAT Database of the Food and Agricultural Organization (FAO) of the United Nations
+- [imfr](https://cran.r-project.org/web/packages/imfr/index.html) - Explore and download data from the International Monetary Fund's data API <http://data.imf.org/>.
+
+
+## Datan raapiminen verkosta
+
+- [rvest](https://cran.r-project.org/web/packages/rvest/index.html) Easily Harvest (Scrape) Web Pages
+    - [Selectorgadget](https://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html)
+
+
+# Harjoitus 1
+
+
+# Harjoitus 2
+
+
+# Harjoitus 3
+
+
+# Kotitehtävä

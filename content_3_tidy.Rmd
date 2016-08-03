@@ -9,14 +9,33 @@ output:
 ---
 
 
-# Johdanto
+# Ennakkotehtävät
+
+## Lue
+
+- [Wickham, Hadley. 2014. ‘Tidy Data’. Journal of Statistical Software 59 (10). doi:10.18637/jss.v059.i10.
+](http://vita.had.co.nz/papers/tidy-data.html)
+- tidyr-paketin vignette: <https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html>
+- Rstudio blog: Introducing tidyr <https://blog.rstudio.org/2014/07/22/introducing-tidyr/>
+- Data Wrangling Cheat Sheet - RStudio  <https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf>
 
 
-## "Hadleyverse"
+## Katso
+
+- Getting Data into R <https://vimeo.com/130548869>
 
 
-![](graphics/wickham_cycle.png)
 
 
+# Harjoitus 1
+
+
+# Harjoitus 2
+
+
+# Harjoitus 3
+
+
+# Kotitehtävä
 
 

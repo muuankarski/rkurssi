@@ -9,13 +9,27 @@ output:
 ---
 
 
-# Johdanto
+# Ennakkotehtävät
 
 
-## "Hadleyverse"
+## Lue
 
 
-![](graphics/wickham_cycle.png)
+## Katso
+
+
+
+
+# Harjoitus 1
+
+
+# Harjoitus 2
+
+
+# Harjoitus 3
+
+
+# Kotitehtävä
 
 
 

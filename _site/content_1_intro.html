@@ -371,17 +371,50 @@ div.tocify {
 </div>
 
 
-<div id="r-kielen-taustaa-ja-nykytila" class="section level1">
-<h1><span class="header-section-number">1</span> R-kielen taustaa ja nykytila</h1>
+<div id="ennakkotehtavat" class="section level1">
+<h1><span class="header-section-number">1</span> Ennakkotehtävät</h1>
+<div id="lue" class="section level2">
+<h2><span class="header-section-number">1.1</span> Lue</h2>
+</div>
+<div id="katso" class="section level2">
+<h2><span class="header-section-number">1.2</span> Katso</h2>
 <ul>
 <li><a href="https://digihist.se/5-metoder-inom-digital-historia/fordjupning-open-research-methods-in-computational-social-sciences-and-humanities-introducing-r/">Open research methods in computational social sciences and humanities: introducing R (Kainu 2014)</a></li>
 </ul>
+</div>
 </div>
 <div id="kurssilla-kaytettava-r-kielen-murre-eli-ns.-hadleyverse" class="section level1">
 <h1><span class="header-section-number">2</span> Kurssilla käytettävä R-kielen murre eli ns. “Hadleyverse”</h1>
 <div class="figure">
 <img src="graphics/wickham_cycle.png" />
 
+</div>
+</div>
+<div id="kurssin-rakenne" class="section level1">
+<h1><span class="header-section-number">3</span> Kurssin rakenne</h1>
+<div id="import-tuo" class="section level2">
+<h2><span class="header-section-number">3.1</span> Import / tuo</h2>
+<p>R:n perusasennuksessa tulee <a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html">joukko datoja</a> mukana, jotka ovat heti käytettävissä. Saat datan kuvauksen kirjoittamalla <code>?datan_nimi</code>. Aluksi käytämme dataa <code>?mtcars</code>.</p>
+<pre class="r"><code>?mtcars
+head(mtcars)</code></pre>
+<pre><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+<p>Samat datat + paljon muuta löytyy Vincent ylläpitämältä <a href="https://vincentarelbundock.github.io/Rdatasets/datasets.html">Rdatasets</a>-sivustolta, josta voimme ladata esimerkiksi saman <code>mtcars</code>-datan komennolla</p>
+<pre class="r"><code>d &lt;- read.csv(&quot;https://vincentarelbundock.github.io/Rdatasets/csv/datasets/mtcars.csv&quot;,
+                   stringsAsFactors = FALSE)
+head(d)</code></pre>
+<pre><code>##                   X  mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## 1         Mazda RX4 21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## 2     Mazda RX4 Wag 21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## 3        Datsun 710 22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## 4    Hornet 4 Drive 21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## 5 Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## 6           Valiant 18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
 </div>
 </div>
 
