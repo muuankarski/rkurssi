@@ -13,20 +13,9 @@ Kurssilla käytettävät ohjelmistot ovat poikkeuksestta [vapaita](https://fi.wi
 
 
 
-
-
-
 ## R Studio
 
-
-- <https://vimeo.com/97166163>
-
-<a href="https://www.r-project.org/">
-<img src="https://www.r-project.org/logo/Rlogo.png" alt="Smiley face" style="float:right;width:150px;">
-</a>
-
---include-before-body /tmp/RtmpEJDALG/rmarkdown-str55a516caa944.html --variable navbar=1 --variable body_padding=45 --variable header_padding=50 --variable 'theme:yeti' --include-in-header /tmp/RtmpEJDALG/rmarkdown-str55a5eff3940.html --mathjax --variable 'mathjax-url:https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --no-highlight --variable highlightjs=site_libs/highlight --variable highlightjs-theme=textmate --variable navigationjs=site_libs/navigation-1.1 --include-after-body footer.html
-
+- RStudio Full Tour <https://vimeo.com/97378167>
 
 ## Rmarkdown
 
@@ -36,11 +25,15 @@ Kurssilla käytettävät ohjelmistot ovat poikkeuksestta [vapaita](https://fi.wi
 
 ## git
 
---include-before-body /tmp/RtmpEJDALG/rmarkdown-str55a516caa944.html --variable navbar=1 --variable body_padding=45 --variable header_padding=50 --variable 'theme:yeti' --include-in-header /tmp/RtmpEJDALG/rmarkdown-str55a5eff3940.html --mathjax --variable 'mathjax-url:https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --no-highlight --variable highlightjs=site_libs/highlight --variable highlightjs-theme=textmate --variable navigationjs=site_libs/navigation-1.1 --include-after-body footer.html
+- git <https://git-scm.com/>
+- The Basics of Git and GitHub <https://www.youtube.com/watch?v=U8GBXvdmHT4>
+- Lear Git in 20 minutes <https://www.youtube.com/watch?v=Y9XZQO1n_7c>
+- RStudio & git/github Demonstration <https://vimeo.com/119403806>
+
 
 ## shell
 
---include-before-body /tmp/RtmpEJDALG/rmarkdown-str55a516caa944.html --variable navbar=1 --variable body_padding=45 --variable header_padding=50 --variable 'theme:yeti' --include-in-header /tmp/RtmpEJDALG/rmarkdown-str55a5eff3940.html --mathjax --variable 'mathjax-url:https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --no-highlight --variable highlightjs=site_libs/highlight --variable highlightjs-theme=textmate --variable navigationjs=site_libs/navigation-1.1 --include-after-body footer.html
+- Shell script <https://en.wikipedia.org/wiki/Shell_script>
 
 ## Github-koodinjakopalvelu
 

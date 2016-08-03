@@ -7,26 +7,29 @@ navbar:
       icon: fa-list-alt
       menu:
         - text: "Johdanto"
-          icon: fa-table
+          icon: fa-bolt
           href: content_1_intro.html
-        - text: "Datalähteet ja datan tuominen"
-          icon: fa-line-chart
+        - text: "Datalähteet ja datan tuominen ja vieminen"
+          icon: fa-exchange
           href: content_2_import.html
         - text: "Datan siivoaminen"
-          icon: fa-line-chart
+          icon: fa-sort-amount-asc
           href: content_3_tidy.html
         - text: "Datan muokkaus"
-          icon: fa-line-chart
+          icon: fa-random
           href: content_4_transform.html
         - text: "Datan visualisoiminen"
-          icon: fa-line-chart
+          icon: fa-area-chart
           href: content_5_visualise.html          
         - text: "Datan mallintaminen"
-          icon: fa-line-chart
+          icon: fa-tree
           href: content_6_model.html          
     - text: "Ohjelmistoympäristö"
-      icon: fa-random
+      icon: fa-cogs
       href: environment.html
+    - text: "Videos from useR2016"
+      icon: fa-file-video-o
+      href: videos.html
   right:
     - icon: fa-info
       href: http://markuskainu.fi
