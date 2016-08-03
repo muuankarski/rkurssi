@@ -1,6 +1,6 @@
 name: "kela_r_help"
 navbar:
-  title: "Soveltava data-analyysi R-kielellä"
+  title: "Data-analyysin perusteet R-kielellä"
   type: inverse
   left:
     - text: "Kurssin sisältö"

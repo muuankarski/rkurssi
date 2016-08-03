@@ -1,5 +1,5 @@
 ---
-title: "Soveltava data-analyysi R-kielellä"
+title: "Data-analyysin perusteet R-kielellä"
 ---
 
 `Sivusto generoitu viimeksi: `r Sys.time()``
