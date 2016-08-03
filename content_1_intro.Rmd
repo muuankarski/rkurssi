@@ -19,12 +19,32 @@ output:
 
 - [Open research methods in computational social sciences and humanities: introducing R (Kainu 2014)](https://digihist.se/5-metoder-inom-digital-historia/fordjupning-open-research-methods-in-computational-social-sciences-and-humanities-introducing-r/)
 
+# Miten oppia R
+
+R on vapaa, avoimen lähdekoodin ohjelmisto, jonka 
+
+- <https://www.rstudio.com/online-learning/>
+
+
 
 # Kurssilla käytettävä R-kielen murre eli ns. "Hadleyverse"
 
 
 ![](graphics/wickham_cycle.png)
 
+
+
+
+1. [Import](#import) your data into R
+2. [Tidy](#tidy) it
+3. Understand your data by iteratively 
+    a. [visualizing](#visualize)
+    b. [tranforming](#transform) and 
+    c. [modeling](#modelinfer) your data
+4. [Infer](#infer) how your understanding applies to other data sets (_including future data, i.e. predictions_)
+5. [Communicate](#communicate) your results to an audience, or
+6. [Automate](#automate) your analysis for easy reuse
+7. [Program](#program) the whole way through, since you do each of these things on a computer
 
 
 # Kurssin rakenne

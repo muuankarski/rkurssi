@@ -332,6 +332,13 @@ div.tocify {
         Datan mallintaminen
       </a>
     </li>
+    <li>
+      <a href="content_7_communicate.html">
+        <span class="fa fa-bullhorn"></span>
+         
+        Tulosten kommunikoiminen/raportoiminen
+      </a>
+    </li>
   </ul>
 </li>
 <li>
@@ -390,17 +397,38 @@ div.tocify {
 </ul>
 </div>
 </div>
+<div id="miten-oppia-r" class="section level1">
+<h1><span class="header-section-number">2</span> Miten oppia R</h1>
+<p>R on vapaa, avoimen lähdekoodin ohjelmisto, jonka</p>
+<ul>
+<li><a href="https://www.rstudio.com/online-learning/" class="uri">https://www.rstudio.com/online-learning/</a></li>
+</ul>
+</div>
 <div id="kurssilla-kaytettava-r-kielen-murre-eli-ns.-hadleyverse" class="section level1">
-<h1><span class="header-section-number">2</span> Kurssilla käytettävä R-kielen murre eli ns. “Hadleyverse”</h1>
+<h1><span class="header-section-number">3</span> Kurssilla käytettävä R-kielen murre eli ns. “Hadleyverse”</h1>
 <div class="figure">
 <img src="graphics/wickham_cycle.png" />
 
 </div>
+<ol style="list-style-type: decimal">
+<li><a href="#import">Import</a> your data into R</li>
+<li><a href="#tidy">Tidy</a> it</li>
+<li>Understand your data by iteratively
+<ol style="list-style-type: lower-alpha">
+<li><a href="#visualize">visualizing</a></li>
+<li><a href="#transform">tranforming</a> and</li>
+<li><a href="#modelinfer">modeling</a> your data</li>
+</ol></li>
+<li><a href="#infer">Infer</a> how your understanding applies to other data sets (<em>including future data, i.e. predictions</em>)</li>
+<li><a href="#communicate">Communicate</a> your results to an audience, or</li>
+<li><a href="#automate">Automate</a> your analysis for easy reuse</li>
+<li><a href="#program">Program</a> the whole way through, since you do each of these things on a computer</li>
+</ol>
 </div>
 <div id="kurssin-rakenne" class="section level1">
-<h1><span class="header-section-number">3</span> Kurssin rakenne</h1>
+<h1><span class="header-section-number">4</span> Kurssin rakenne</h1>
 <div id="import-tuo" class="section level2">
-<h2><span class="header-section-number">3.1</span> Import / tuo</h2>
+<h2><span class="header-section-number">4.1</span> Import / tuo</h2>
 <p>R:n perusasennuksessa tulee <a href="https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html">joukko datoja</a> mukana, jotka ovat heti käytettävissä. Saat datan kuvauksen kirjoittamalla <code>?datan_nimi</code>. Aluksi käytämme dataa <code>?mtcars</code>.</p>
 <pre class="r"><code>?mtcars
 head(mtcars)</code></pre>

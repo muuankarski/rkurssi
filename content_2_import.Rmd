@@ -8,6 +8,11 @@ output:
     code_folding: show
 ---
 
+# Paketit
+
+
+
+
 
 # Ennakkotehtävät
 
@@ -15,12 +20,69 @@ output:
 ## Lue
 
 
+- R Data Import/Export <https://cran.r-project.org/doc/manuals/r-devel/R-data.html> *This is a guide to importing and exporting data to and from R.*
+- - R for Data Science: Data import <http://r4ds.had.co.nz/data-import.html>
+
+
+
 ## Katso
 
 
 - Getting Data into R <https://vimeo.com/130548869> 0.00 -> 
 
-# Paketteja erilaisille datalähteille
+
+
+## Datapaketteja
+
+These packages contain data sets to use as training data or toy examples.
+
+* [babynames](https://github.com/hadley/babynames) - Names given to US babies 1880-2014
+* [neiss](https://github.com/hadley/neiss) - sample of all accidents reported to US emergency rooms 2009-2014
+* [yrbss](https://github.com/hadley/yrbss) - Youth Risk Behaviour Surveillance System data from 1991 to 2013
+* [nycflights13](https://github.com/hadley/nycflights13) - all out-bound flights from NYC in 2013
+* [hflights](https://github.com/hadley/hflights) - flights departing Houston in 2011
+* [USAboundaries](https://github.com/ropensci/USAboundaries) - Historical and Contemporary Boundaries of the United States of America
+* [rworldmap](https://github.com/AndySouth/rworldmap) - country border data
+* [usdanutrients](https://github.com/hadley/usdanutrients) - USDA nutrient database
+* [fueleconomy](https://github.com/hadley/fueleconomy) - EPA fuel economy data
+* [nasaweather](https://github.com/hadley/nasaweather) - geographic and atmospheric measures on a very coarse 24 by 24 grid covering Central America
+* [mexico-mortality](https://github.com/hadley/mexico-mortality) - deaths in Mexico
+* [data-movies](https://github.com/hadley/data-movies) and [ggplotmovies](https://cran.r-project.org/web/packages/ggplot2movies/) - data from the Internet Movie Database (IMDB)
+* [pop-flows](https://github.com/hadley/pop-flows) - Population flows around the USA in 2008
+* [data-housing-crisis](https://github.com/hadley/data-housing-crisis) - Clean data related to the 2008 US housing crisis
+* [gun-sales](https://github.com/NYTimes/gunsales) - Statistical analysis of monthly background checks of gun purchases from NY times
+* [stationaRy](https://github.com/rich-iannone/stationaRy) - hourly meteorological data from one of thousands of global stations
+* [gapminder](https://github.com/jennybc/gapminder) - Excerpt from the Gapminder data
+* [janeaustenr](https://github.com/juliasilge/janeaustenr) - Jane Austen's Complete Novels
+
+
+
+# Paketteja datan lukemiseen eri datalähteistä
+
+These packages help you import data into R and save data.
+
+* [feather](https://blog.rstudio.org/2016/03/29/feather/) - a fast, lightweight file format used by both R and Python
+* [readr](https://blog.rstudio.org/2015/10/28/readr-0-2-0/) - reads tabular data
+* [readxl](https://blog.rstudio.org/2015/04/15/readxl-0-1-0/) - reads Microsoft Excel spreadsheets
+* [openxlsx](https://github.com/awalker89/openxlsx) - reads Microsoft Excel spreadsheets
+* [googlesheets](https://github.com/jennybc/googlesheets) - reads Google spreadsheets
+* [haven](https://blog.rstudio.org/2015/03/04/haven-0-1-0/) - reads SAS, SPSS, and Stata files
+* [httr](https://blog.rstudio.org/2016/02/02/httr-1-1-0/) - reads data from web APIs
+* [rvest](https://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/) - scrapes data from web pages
+* [xml2](https://github.com/hadley/xml2) - reads HTML and XML data
+* [webreadr](https://cran.r-project.org/web/packages/webreadr/vignettes/Introduction.html) - reads common web log formats
+* [DBI](https://github.com/rstats-db/DBI) - a universal interface to database management systems (DBMS)
+    + [RMySQL](https://github.com/rstats-db/RMySQL) - MySQL driver for DBI
+    + [RPostgres](https://github.com/rstats-db/RPostgres) - Postgres driver for DBI
+    + [RSQLite](https://github.com/rstats-db/RSQLite) - SQlite driver for DBI
+    + [bigrquery](https://github.com/rstats-db/bigrquery) - Google BigQuery driver for DBI
+* [PivotalR](https://github.com/pivotalsoftware/PivotalR) - reads data from and interfaces with [Postgres](http://www.postgresql.org), [Greenplum](http://greenplum.org), and [HAWQ](http://hawq.incubator.apache.org) 
+* [dplyr](https://github.com/hadley/dplyr) - contains an interface to common databases
+* [data.table](https://github.com/Rdatatable/data.table) - `fread()` for fast table reading
+* [git2r](https://github.com/ropensci/git2r) - tools to access git repositories
+
+
+
 
 ## Paikalliset data ie. datan lukeminen levyltä
 
@@ -54,8 +116,8 @@ dbDisconnect(db)
 ```
 
 
-
-
+- The dplyr databases vignette - CRAN <https://cran.r-project.org/web/packages/dplyr/vignettes/databases.html>
+- IBM: Using R with databases <https://www.ibm.com/developerworks/data/library/techarticle/dm-1402db2andr/>
 
 ## Datan lukeminen tilastotietokantojen rajapinnoista
 

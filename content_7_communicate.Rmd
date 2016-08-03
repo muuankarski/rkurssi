@@ -1,0 +1,55 @@
+---
+title: "Tulosten kommunikoiminen"
+output: 
+  html_document: 
+    toc: true
+    toc_float: true
+    number_sections: yes
+    code_folding: show
+---
+
+
+# Ennakkotehtävät
+
+
+## Lue
+
+
+## Katso
+
+
+## Paketteja
+
+
+These packages help you communicate the results of data science to your audiences.
+
+* [rmarkdown](http://rmarkdown.rstudio.com/) - easy-to-use format for reproducible reports and dynamic documents in R
+* [knitr](http://yihui.name/knitr/) - embed R code within pdf and html reports
+* [flexdashboard](http://rstudio.github.io/flexdashboard/) - easy-to-create dashboards based on rmarkdown
+* [bookdown](https://bookdown.org/) - books and long documents built on R Markdown
+* [rticles](https://github.com/rstudio/rticles) - ready to use R Markdown templates
+* [tufte](http://rstudio.github.io/tufte/) - Tufte handout R Markdown template
+* [DT](http://rstudio.github.io/DT/) - Interactive data tables
+* [pixiedust](https://github.com/nutterb/pixiedust) - Customized tables
+* [xtable](https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf) - Customized tables
+* [highr](https://github.com/yihui/highr) - Syntax Highlighting for R Source Code
+* [formatR](http://yihui.name/formatR/) - `tidy_source()` to format R source code
+* [yaml](https://github.com/viking/r-yaml) - Methods to convert R data to YAML and back
+* [pander](http://rapporter.github.io/pander/) - renders R objects into Pandoc markdown.
+
+
+# Harjoitus 1
+
+
+# Harjoitus 2
+
+
+# Harjoitus 3
+
+
+# Kotitehtävä
+
+
+
+
+

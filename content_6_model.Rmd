@@ -18,6 +18,32 @@ output:
 ## Katso
 
 
+## Paketteja
+
+## Model/Infer
+These packages help you build models and make inferences. Often the same packages will focus on both topics.
+
+* [car](https://r-forge.r-project.org/projects/car/) - functions from An R Companion to Applied Regression
+* [Hmisc](https://github.com/harrelfe/Hmisc) - miscellaneous functions for data analysis
+* [multcomp](http://multcomp.r-forge.r-project.org/) - Simultaneous Inference in General Parametric Models
+* [pbkrtest](http://people.math.aau.dk/~sorenh/software/pbkrtest/) - parametric bootstrap test for linear mixed effects models 
+* [mvtnorm](http://mvtnorm.r-forge.r-project.org/) - Multivariate Normal and t Distributions
+* [MatrixModels](http://matrix.r-forge.r-project.org/) - Modelling with Sparse And Dense Matrices
+* [SparseM](http://www.econ.uiuc.edu/~roger/research/sparse/sparse.html) - linear algebra for sparse matrices
+* [lme4](https://github.com/lme4/lme4) - Linear Mixed-Effects Models using Eigen C++ library
+* [broom](http://varianceexplained.org/r/broom-intro/) - tools for tidying statistical models into data frames
+* [caret](http://topepo.github.io/caret/index.html) - tools for Classification And REgression Training
+* [glmnet](https://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html) - generalized linear models via penalized maximum likelihood
+* [mosaic](http://mosaic-web.org/) - Tools for teaching mathematics, statistics, computation and modeling
+* [gbm](https://github.com/gbm-developers/gbm) - gradient boosted regression models
+* [xgboost](https://github.com/dmlc/xgboost) - Extreme Gradient Boosting
+* [randomForest](https://www.stat.berkeley.edu/~breiman/RandomForests/) - Random Forests for Classification and Regression
+* [ranger](https://github.com/imbs-hl/ranger) - a fast implementation of Random Forests
+* [h2o](http://www.h2o.ai/) - parallel distributed machine learning algorithms
+* [ROCR](http://rocr.bioinf.mpi-sb.mpg.de/) - plots to visualize classifier performance
+* [pROC](http://web.expasy.org/pROC/) - Tools for visualizing, smoothing and comparing ROC curves
+* [PivotalR](https://github.com/pivotalsoftware/PivotalR) - R wrappers for [MADlib](http://madlib.incubator.apache.org)'s parallel distributed machine learning algorithms
+
 
 # Harjoitus 1
 

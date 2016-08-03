@@ -17,7 +17,21 @@ output:
 
 ## Katso
 
+## Paketteja
 
+
+These packages help you transform your data into new types of data.
+
+* [dplyr](https://github.com/hadley/dplyr) - a grammar of data transformation
+* [magrittr](https://github.com/smbache/magrittr) - a concise syntax for calling sequences of functions
+* [tibble](https://github.com/hadley/tibble) - efficient display structure for tabular data
+* [stringr](https://blog.rstudio.org/2015/05/05/stringr-1-0-0/) - tools for working with strings and regular expressions
+* [lubridate](https://cran.r-project.org/web/packages/lubridate/vignettes/lubridate.html) - tools for working with dates and times
+* [xts](http://r-forge.r-project.org/projects/xts) - tools for time series based data
+* [data.table](https://github.com/Rdatatable/data.table/wiki) - fast data manipulation
+* [vtreat](https://github.com/WinVector/vtreat) - tools for pre-processing variables for predictive modeling
+* [stringi](http://www.rexamine.com/resources/stringi/) - fast string processing facilities. 
+* [Matrix](http://matrix.r-forge.r-project.org/) - LAPACK methods for dense and sparse matrix operations
 
 
 

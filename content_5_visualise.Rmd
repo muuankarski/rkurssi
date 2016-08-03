@@ -18,6 +18,61 @@ output:
 ## Katso
 
 
+## Paketteja
+
+## Visualize
+These packages help you visualize your data.
+
+* [ggplot2](http://docs.ggplot2.org/current/) with [extensions](http://www.ggplot2-exts.org/) - a versatile system for making plots
+    + [ggthemes](https://github.com/jrnold/ggthemes) - plot style themes
+    + [ggmap](https://github.com/dkahle/ggmap) - maps with Google Maps, Open Street Maps, etc.
+    + [ggiraph](http://davidgohel.github.io/ggiraph/introduction.html) - interactive ggplots
+    + [ggstance](https://github.com/lionel-/ggstance) - horizontal versions of common plots
+    + [GGally](https://github.com/ggobi/ggally) - scatterplot matrices
+    + [ggalt](https://github.com/hrbrmstr/ggalt) - additional coordinate systems, geoms, etc.
+    + [ggforce](https://github.com/thomasp85/ggforce) - additional geoms, etc.
+    + [ggrepel](https://github.com/slowkow/ggrepel) - prevent plot labels from overlapping
+    + [ggraph](https://github.com/thomasp85/ggraph) - graphs, networks, trees and more
+    + [ggpmisc](https://cran.rstudio.com/web/packages/ggpmisc/) - photo-biology related extensions
+    + [geomnet](https://github.com/sctyner/geomnet) - network visualization
+    + [ggExtra](https://github.com/daattali/ggExtra) - marginal histograms for a plot
+    + [gganimate](https://github.com/dgrtwo/gganimate) - animations
+    + [plotROC](https://github.com/sachsmc/plotROC) - interactive ROC plots
+    + [ggspectra](https://cran.rstudio.com/web/packages/ggspectra/) - tools for plotting light spectra
+    + [ggnetwork](https://github.com/briatte/ggnetwork) - geoms to plot networks
+    + [ggtech](https://github.com/ricardo-bion/ggtech) - style themes for plots
+    + [ggradar](https://github.com/ricardo-bion/ggradar) - radar charts
+    + [ggTimeSeries](https://github.com/Ather-Energy/ggTimeSeries) - time series visualizations
+    + [ggtree](https://bioconductor.org/packages/release/bioc/html/ggtree.html) - tree visualizations
+    + [ggseas](https://github.com/ellisp/ggseas) - seasonal adjustment tools
+* [lattice](http://lattice.r-forge.r-project.org/) - Trellis graphics
+* [rgl](https://cran.r-project.org/web/packages/rgl/vignettes/rgl.html) - interactive 3D plots
+* [ggvis](http://ggvis.rstudio.com/) - versatile system for interactive graphs
+* [htmlwidgets](http://www.htmlwidgets.org/) - framework for creating JavaScript widgets with R
+    + [leaflet](http://rstudio.github.io/leaflet/) - Interactive maps
+    + [dygraphs](http://rstudio.github.io/dygraphs) - Interactive time series plots
+    + [plotly](https://plot.ly/r/) - Interactive plots
+    + [rbokeh](http://hafen.github.io/rbokeh) - Interactive Bokeh plots
+    + [Highcharter](http://jkunst.com/highcharter/) - Interactive Highcharts plots
+    + [visNetwork](http://dataknowledge.github.io/visNetwork) - Interactive network graphs
+    + [networkD3](http://christophergandrud.github.io/networkD3/) - Interative d3 network graphs
+    + [d3heatmap](https://github.com/rstudio/d3heatmap) - Interactive d3 heatmaps
+    + [DT](http://rstudio.github.io/DT/) - Interactive tables
+    + [threejs](https://github.com/bwlewis/rthreejs) - Interactive 3d plots and globes
+    + [rglwidget](http://cran.at.r-project.org/web/packages/rglwidget/index.html) - Interactive 3d plot
+    + [DiagrammeR](http://rich-iannone.github.io/DiagrammeR/) - Interactive diagrams
+    + [MetricsGraphics](http://hrbrmstr.github.io/metricsgraphics/) - Interactive MetricsGraphics plots
+* [rCharts](http://rcharts.io/) - many interactive JavaScript visualizations
+* [coefplot](http://github.com/jaredlander/coefplot) - visualizes model statistics
+* [quantmod](http://www.quantmod.com/) - candlestick financial charts
+* [colorspace](https://cran.r-project.org/web/packages/colorspace/vignettes/hcl-colors.pdf) - HSL based color palettes
+* [viridis](https://github.com/sjmgarnier/viridis) - Matplotlib viridis color pallete for R
+* [munsell](https://github.com/cwickham/munsell) - Munsell color palettes for R.
+* RColorBrewer - color palettes for plots. No manual or website.
+* dichromat - color-blind friendly palettes. No manual or website.
+* [igraph](http://igraph.org/) - Network Analysis and Visualization
+* [latticeExtra](http://latticeextra.r-forge.r-project.org/) - Extensions for lattice graphics
+* [sp](https://github.com/edzer/sp/) - tools for spatial data
 
 
 # Harjoitus 1

@@ -15,16 +15,29 @@ output:
 
 - [Wickham, Hadley. 2014. ‘Tidy Data’. Journal of Statistical Software 59 (10). doi:10.18637/jss.v059.i10.
 ](http://vita.had.co.nz/papers/tidy-data.html)
+- R for Data Science: Tidy Data <http://r4ds.had.co.nz/tidy-data.html>
+
 - tidyr-paketin vignette: <https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html>
 - Rstudio blog: Introducing tidyr <https://blog.rstudio.org/2014/07/22/introducing-tidyr/>
 - Data Wrangling Cheat Sheet - RStudio  <https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf>
+
 
 
 ## Katso
 
 - Getting Data into R <https://vimeo.com/130548869>
 
+## Paketit
 
+## Tidy
+These packages help you wrangle your data into a form that is easy to analyze in R.
+
+* [tidyr](https://github.com/hadley/tidyr) - tools for tidying layout of tabular data
+* [dplyr](https://github.com/hadley/dplyr) - tools for joining multiple tables into a tidy data set
+* [purrr](https://github.com/hadley/purrr) - tools for applying R functions to data structures, very useful when tidying
+* [broom](http://varianceexplained.org/r/broom-intro/) - tools for tidying statistical models into data frames
+* [zoo](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=r%20zoo) - data structures for time series data
+* [PivotalR](https://github.com/pivotalsoftware/PivotalR) - R wrappers for in-database SQL operations (i.e. join, group by)
 
 
 # Harjoitus 1

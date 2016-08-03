@@ -23,7 +23,10 @@ navbar:
           href: content_5_visualise.html          
         - text: "Datan mallintaminen"
           icon: fa-tree
-          href: content_6_model.html          
+          href: content_6_model.html
+        - text: "Tulosten kommunikoiminen/raportoiminen"
+          icon: fa-bullhorn
+          href: content_7_communicate.html   
     - text: "Ohjelmistoympäristö"
       icon: fa-cogs
       href: environment.html
