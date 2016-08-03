@@ -371,15 +371,100 @@ div.tocify {
 </div>
 
 
-<div id="johdanto" class="section level1">
-<h1><span class="header-section-number">1</span> Johdanto</h1>
-<div id="hadleyverse" class="section level2">
-<h2><span class="header-section-number">1.1</span> “Hadleyverse”</h2>
-<div class="figure">
-<img src="graphics/wickham_cycle.png" />
+<div id="ennakkotehtavat" class="section level1">
+<h1><span class="header-section-number">1</span> Ennakkotehtävät</h1>
+<div id="lue" class="section level2">
+<h2><span class="header-section-number">1.1</span> Lue</h2>
+</div>
+<div id="katso" class="section level2">
+<h2><span class="header-section-number">1.2</span> Katso</h2>
+<ul>
+<li>Getting Data into R <a href="https://vimeo.com/130548869" class="uri">https://vimeo.com/130548869</a> 0.00 -&gt;</li>
+</ul>
+</div>
+</div>
+<div id="paketteja-erilaisille-datalahteille" class="section level1">
+<h1><span class="header-section-number">2</span> Paketteja erilaisille datalähteille</h1>
+<div id="paikalliset-data-ie.-datan-lukeminen-levylta" class="section level2">
+<h2><span class="header-section-number">2.1</span> Paikalliset data ie. datan lukeminen levyltä</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Data</th>
+<th>Paketti</th>
+<th>Vaihtoehdot</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>tilasto-ohjelmat</td>
+<td><a href="">haven</a></td>
+<td><a href="">foreign</a>, <a href="">sas7bdat</a>, <a href="">readstata13</a></td>
+</tr>
+<tr class="even">
+<td>Excel</td>
+<td><a href="">readxl</a></td>
+<td><a href="">gdata</a>, <a href="">openxlsx</a>, <a href="">XLConnect</a>, <a href="">xlsx</a></td>
+</tr>
+<tr class="odd">
+<td>Tekstidatat</td>
+<td><a href="">readr</a></td>
+<td><a href="">base</a>, <a href="">data.table</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="datan-lukeminen-tietokannoista" class="section level2">
+<h2><span class="header-section-number">2.2</span> Datan lukeminen tietokannoista</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/DBI/index.html">DBI</a> A database interface definition for communication between R and relational database management systems</li>
+</ul>
+<pre class="r"><code># 1) Load the DBI package
+library(DBI)
 
+# 2) Connect to a spesific database
+db &lt;- dbConnect(RPostgres::Posgres(), user, pass, ...)
+db &lt;- dbConnect(RMySQL::MySQL(), user, pass, ...)
+db &lt;- dbConnect(RSQLite::::SQLite(), path)
+
+# 3) Execute a query
+dbGetQuery(db, &quot;SELECT * FROM mtcars&quot;)
+
+# 4) Be polite and close connection
+dbDisconnect(db)</code></pre>
+</div>
+<div id="datan-lukeminen-tilastotietokantojen-rajapinnoista" class="section level2">
+<h2><span class="header-section-number">2.3</span> Datan lukeminen tilastotietokantojen rajapinnoista</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/sotkanet/index.html">sotkanet</a> Tools for Sotkanet Open Data Portal</li>
+<li><a href="https://cran.r-project.org/web/packages/pxweb/index.html">pxweb</a> R Interface to the PX-Web/PC-Axis API (Tilastokeskus, Statistics Sweden etc.)</li>
+<li><a href="https://cran.r-project.org/web/packages/eurostat/index.html">eurostat</a> Tools to download data from the Eurostat database <a href="http://ec.europa.eu/eurostat" class="uri">http://ec.europa.eu/eurostat</a> together with search and manipulation utilities.</li>
+<li><a href="https://cran.r-project.org/web/packages/WDI/index.html">WDI</a> Search, extract and format data from the World Bank’s World Development Indicators</li>
+<li><a href="https://cran.r-project.org/web/packages/FAOSTAT/index.html">FAOSTAT</a> Download Data from the FAOSTAT Database of the Food and Agricultural Organization (FAO) of the United Nations</li>
+<li><a href="https://cran.r-project.org/web/packages/imfr/index.html">imfr</a> - Explore and download data from the International Monetary Fund’s data API <a href="http://data.imf.org/" class="uri">http://data.imf.org/</a>.</li>
+</ul>
+</div>
+<div id="datan-raapiminen-verkosta" class="section level2">
+<h2><span class="header-section-number">2.4</span> Datan raapiminen verkosta</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/rvest/index.html">rvest</a> Easily Harvest (Scrape) Web Pages
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html">Selectorgadget</a></li>
+</ul></li>
+</ul>
 </div>
 </div>
+<div id="harjoitus-1" class="section level1">
+<h1><span class="header-section-number">3</span> Harjoitus 1</h1>
+</div>
+<div id="harjoitus-2" class="section level1">
+<h1><span class="header-section-number">4</span> Harjoitus 2</h1>
+</div>
+<div id="harjoitus-3" class="section level1">
+<h1><span class="header-section-number">5</span> Harjoitus 3</h1>
+</div>
+<div id="kotitehtava" class="section level1">
+<h1><span class="header-section-number">6</span> Kotitehtävä</h1>
 </div>
 
 <br>
