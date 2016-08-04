@@ -30,9 +30,9 @@ navbar:
     - text: "Ohjelmistoympäristö"
       icon: fa-cogs
       href: environment.html
-    - text: "Videos from useR2016"
-      icon: fa-file-video-o
-      href: videos.html
+#    - text: "Videos from useR2016"
+#      icon: fa-file-video-o
+#      href: videos.html
   right:
     - icon: fa-info
       href: http://markuskainu.fi

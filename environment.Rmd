@@ -2,7 +2,7 @@
 title: "Ohjelmistoymparisto"
 ---
 
-Kurssilla käytettävät ohjelmistot ovat poikkeuksestta [vapaita](https://fi.wikipedia.org/wiki/Vapaa_ohjelmisto) ja [avoimen lähdekoodin ohjelmistoja](https://fi.wikipedia.org/wiki/Avoin_l%C3%A4hdekoodi), joita voi käyttää sekä Windowsissa, OSX:ssä että eri linux-jakeluissa.
+Kurssilla käytettävät ohjelmistot ovat poikkeuksetta [vapaita](https://fi.wikipedia.org/wiki/Vapaa_ohjelmisto) ja [avoimen lähdekoodin ohjelmistoja](https://fi.wikipedia.org/wiki/Avoin_l%C3%A4hdekoodi), joita voi käyttää sekä Windowsissa, OSX:ssä että eri linux-jakeluissa.
 
 
 # Ohjelmistot
