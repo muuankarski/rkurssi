@@ -8,7 +8,9 @@ Parahin lukija,
 
 Tämä sivusto toimii Kardemumman yliopiston sosiaalitutkimuksen laitoksen *Soveltava data-analyysi R-kielellä* -kurssin opetuksen alustana. 
 
-Kurssilla käydään tiiviisti läpi R-kielen kenties suosituin data-analyysin prosessi josta käytetään nimeä  *hadleyverse* tai *tidyverse*. Nimi tarkoittaa [Hadley Wickhamin](http://hadley.nz/) viime vuosina kirjoittamien pakettien ja [tidy data](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html) -ajattelun muodostamaa kokonaisuutta. Alla oleva kuva illustroi ko. prosessia ja tämä kurssin rakenne noudattelee prosessin eri vaiheita. (ks. kurssin sisältö ylänavigaatiosta)
+Tämä kurssi ei ole perinteinen johdatus R-kieleen vaan kurssin tavoitteena on opettaa *lyhyessä ajassa käytännön taidot data-analyysin koko prosessin hallintaan R-kielen suosituimmilla työkaluilla* opiskelijoille joilla on jo paljon kokemusta data-analyysista muilla työkaluilla ja kenties myös R:n perustyökaluilla.
+
+Toisin sanoen kurssilla käydään tiiviisti läpi R-kielen kenties suosituin data-analyysin prosessi josta käytetään nimeä  *hadleyverse* tai *tidyverse*. Nimi viittaa [Hadley Wickhamin](http://hadley.nz/)  kirjoittamien pakettien ja [tidy data](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html) -lähestymistavan muodostamaa kokonaisuutta (ks. alla oleva kuva).
 
 ![](graphics/wickham_cycle.png)
 
@@ -20,15 +22,27 @@ Kurssilla käytettävät ohjelmistot ovat poikkeuksetta [vapaita](https://fi.wik
 
 ## Materiaalit
 
-Kurssin sivusto houstataan [Github](https://github.com/)-koodinjakopalvelussa osoitteessa: <https://muuankarski.github.io/rkurssi>. Lähdekoodin löydät vastaavasta repositorysta: <https://github.com/muuankarski/rkurssi>.
+Kurssin sisältö nojaa käytännössä täysin verkossa vapaasti käytössä oleviin sisältöihin ja opettaja on ainoastaan koonnut näitä lähteitä yhteen. Kutakin kertaa varten on ennakkomateriaalia sekä luettavassa että katsottavassa muodossa ja varsinaisella opetuskerralla opettaja vain vetää yhteen ennakkomateriaali sisällön, jota sovelletaan harjoituksissa.
+
+Materiaalien lähteinä ovat mm.
+
+- 
+- Software carpenty <http://software-carpentry.org/>
+- Data carpenty <http://www.datacarpentry.org/>
+
+
+
 
 Varsinainen kurssimateriaali löytyy myös githubista osoitteesta <https://github.com/muuankarski/rkurssi_materiaalit>
 
 Kaikki kurssiin liittyvät aineisto on avoimesti lisensoitua ja käytettävissä myös kurssin jälkeen.
 
-
 ## Kurssikalenteri
 
 
 <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=rbarcmn1t5ci5endg3phndkc5c%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=Europe%2FHelsinki" style="border-width:0" width="500" height="600" frameborder="0" scrolling="no"></iframe>
+
+## Verkkosivusto
+
+Kurssin sivusto houstataan [Github](https://github.com/)-koodinjakopalvelussa osoitteessa: <https://muuankarski.github.io/rkurssi>. Lähdekoodin löydät vastaavasta repositorysta: <https://github.com/muuankarski/rkurssi>.
 
