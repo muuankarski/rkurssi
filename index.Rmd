@@ -16,8 +16,6 @@ Toisin sanoen kurssilla käydään tiiviisti läpi R-kielen kenties suosituin da
 
 Kurssilla opitaan *tidy data* -lähestymistavan ohella myös ohjelmistokehityksen perustyökalujen käyttöä kuten versiohallintaa. Kaikki uudet työkalut otetaan käyttöön heti kurssin alussa ja ne opetellaan käytännön kautta. 
 
-[American Statistical Association Undergraduate Guidelines Workgroup. 2014. 2014 curriculum guidelines for undergraduate programs in statistical science. Alexandria, VA: American Statistical Association](http://www.amstat.org/education/pdfs/guidelines2014-11-15.pdf)
-
 
 Kurssilla hyödynnetään [Tieteen tietotekniikan keskuksen (CSC)](http://csc,fi) *Pouta Blueprints*  laskentaympäristö, joita opiskelijat voivat käyttää haka-verkon kautta pelkkää selainta käyttäen joko mikroluokkien koneilla tai omalla koneella. Kurssin edetessä halukkaat voivat rakentaa myös vastaavan ympäristön omalle koneelleen omatoimista käyttöä varten.
 
@@ -27,12 +25,18 @@ Kurssilla käytettävät ohjelmistot ovat poikkeuksetta [vapaita](https://fi.wik
 
 Kurssin sisältö nojaa käytännössä täysin verkossa vapaasti käytössä oleviin sisältöihin ja opettaja on ainoastaan koonnut näitä lähteitä yhteen. Kutakin kertaa varten on ennakkomateriaalia sekä luettavassa että katsottavassa muodossa ja varsinaisella opetuskerralla opettaja vain vetää yhteen ennakkomateriaali sisällön, jota sovelletaan harjoituksissa.
 
-Materiaalien lähteinä ovat mm.
+Inspiraation ja materiaalien lähteinä ovat mm.
 
+- An introduction to computational data analysis. Stat 133 - UC Berkeley <http://gastonsanchez.com/stat133/>
+    - <http://www.stat.berkeley.edu/~s133/all2011.pdf>
+- [American Statistical Association Undergraduate Guidelines Workgroup. 2014. 2014 curriculum guidelines for undergraduate programs in statistical science. Alexandria, VA: American Statistical Association](http://www.amstat.org/education/pdfs/guidelines2014-11-15.pdf)
+- <http://www.stat.berkeley.edu/~s133/all2011.pdf>
 - Data wrangling, exploration, and analysis with R - UBC STAT 545A and 547M <http://stat545.com/>
 - Software carpenty <http://software-carpentry.org/>
 - Data carpenty <http://www.datacarpentry.org/>
-
+- Deborah Nolan: Statistical Thinking in a Data Science Course. UseR2016 <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Statistical-Thinking-in-a-Data-Science-Course>
+- Mine Cetinkaya-Rundel: A first-year undergraduate data science course. UseR2016 <https://channel9.msdn.com/events/useR-international-R-User-conference/useR2016/A-first-year-undergraduate-data-science-course>
+- Michael Andrew Levy: Teaching R to 200 people in a week. UseR2016 <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Teaching-R-to-200-people-in-a-week>
 
 
 
