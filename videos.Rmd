@@ -26,6 +26,7 @@ title: "Videos"
 
 ## Domain spesific
 
+- <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Automating-our-work-away-One-consulting-firms-experience-with-KnitR>
 - <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/Spatial-data-in-R-simple-features-and-future-perspectives>
 - <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/How-to-keep-your-R-code-simple-while-tackling-big-datasets>
 - <https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/broom-Converting-statistical-models-to-tidy-data-frames>

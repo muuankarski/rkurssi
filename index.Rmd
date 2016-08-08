@@ -16,6 +16,9 @@ Toisin sanoen kurssilla käydään tiiviisti läpi R-kielen kenties suosituin da
 
 Kurssilla opitaan *tidy data* -lähestymistavan ohella myös ohjelmistokehityksen perustyökalujen käyttöä kuten versiohallintaa. Kaikki uudet työkalut otetaan käyttöön heti kurssin alussa ja ne opetellaan käytännön kautta. 
 
+[American Statistical Association Undergraduate Guidelines Workgroup. 2014. 2014 curriculum guidelines for undergraduate programs in statistical science. Alexandria, VA: American Statistical Association](http://www.amstat.org/education/pdfs/guidelines2014-11-15.pdf)
+
+
 Kurssilla hyödynnetään [Tieteen tietotekniikan keskuksen (CSC)](http://csc,fi) *Pouta Blueprints*  laskentaympäristö, joita opiskelijat voivat käyttää haka-verkon kautta pelkkää selainta käyttäen joko mikroluokkien koneilla tai omalla koneella. Kurssin edetessä halukkaat voivat rakentaa myös vastaavan ympäristön omalle koneelleen omatoimista käyttöä varten.
 
 Kurssilla käytettävät ohjelmistot ovat poikkeuksetta [vapaita](https://fi.wikipedia.org/wiki/Vapaa_ohjelmisto) ja [avoimen lähdekoodin ohjelmistoja](https://fi.wikipedia.org/wiki/Avoin_l%C3%A4hdekoodi), joita voi käyttää sekä Windowsissa, OSX:ssä että eri linux-jakeluissa.
@@ -26,7 +29,7 @@ Kurssin sisältö nojaa käytännössä täysin verkossa vapaasti käytössä ol
 
 Materiaalien lähteinä ovat mm.
 
-- 
+- Data wrangling, exploration, and analysis with R - UBC STAT 545A and 547M <http://stat545.com/>
 - Software carpenty <http://software-carpentry.org/>
 - Data carpenty <http://www.datacarpentry.org/>
 
