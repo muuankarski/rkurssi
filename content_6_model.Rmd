@@ -18,7 +18,24 @@ output:
 ## Katso
 
 
+- UseR2016: broom: Converting statistical models to tidy data frames
+<https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016/broom-Converting-statistical-models-to-tidy-data-frames>
+- broom <https://github.com/dgrtwo/broom>
+
+
+# Materiaalia
+
+- Frank E Harrell Jr: Regression Modeling Strategies (Joint Statistical Meetings Chicago 2016-07-31) <http://biostat.mc.vanderbilt.edu/tmp/course.pdf>
+
+
+
+
 ## Paketteja
+
+- Lucid printing of floating-point vectors
+ <https://rawgit.com/kwstat/lucid/master/vignettes/lucid_printing.html>
+- 
+
 
 ## Model/Infer
 These packages help you build models and make inferences. Often the same packages will focus on both topics.

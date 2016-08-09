@@ -7,6 +7,7 @@ Kurssilla käytettävät ohjelmistot ovat poikkeuksetta [vapaita](https://fi.wik
 
 # Ohjelmistot
 
+Ohjelmistoympäristö on perusteltu ja käyty läpi hyvin täällä: [Jenny Bryan and the STAT 545 TAs: Happy Git and GitHub for the useR](http://happygitwithr.com/)
 
 ## R
 

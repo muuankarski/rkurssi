@@ -379,6 +379,13 @@ div.tocify {
 </div>
 
 
+<pre class="r"><code>library(knitr)
+knitr::opts_chunk$set(list(echo=TRUE,
+                           eval=TRUE,
+                           cache=TRUE,
+                           warning=FALSE,
+                           message=FALSE))
+opts_chunk$set(fig.width = 10, fig.height = 6)</code></pre>
 <div id="paketit" class="section level1">
 <h1><span class="header-section-number">1</span> Paketit</h1>
 </div>
@@ -397,30 +404,6 @@ div.tocify {
 <h2><span class="header-section-number">2.2</span> Katso</h2>
 <ul>
 <li>Getting Data into R <a href="https://vimeo.com/130548869" class="uri">https://vimeo.com/130548869</a> 0.00 -&gt;</li>
-</ul>
-</div>
-<div id="datapaketteja" class="section level2">
-<h2><span class="header-section-number">2.3</span> Datapaketteja</h2>
-<p>These packages contain data sets to use as training data or toy examples.</p>
-<ul>
-<li><a href="https://github.com/hadley/babynames">babynames</a> - Names given to US babies 1880-2014</li>
-<li><a href="https://github.com/hadley/neiss">neiss</a> - sample of all accidents reported to US emergency rooms 2009-2014</li>
-<li><a href="https://github.com/hadley/yrbss">yrbss</a> - Youth Risk Behaviour Surveillance System data from 1991 to 2013</li>
-<li><a href="https://github.com/hadley/nycflights13">nycflights13</a> - all out-bound flights from NYC in 2013</li>
-<li><a href="https://github.com/hadley/hflights">hflights</a> - flights departing Houston in 2011</li>
-<li><a href="https://github.com/ropensci/USAboundaries">USAboundaries</a> - Historical and Contemporary Boundaries of the United States of America</li>
-<li><a href="https://github.com/AndySouth/rworldmap">rworldmap</a> - country border data</li>
-<li><a href="https://github.com/hadley/usdanutrients">usdanutrients</a> - USDA nutrient database</li>
-<li><a href="https://github.com/hadley/fueleconomy">fueleconomy</a> - EPA fuel economy data</li>
-<li><a href="https://github.com/hadley/nasaweather">nasaweather</a> - geographic and atmospheric measures on a very coarse 24 by 24 grid covering Central America</li>
-<li><a href="https://github.com/hadley/mexico-mortality">mexico-mortality</a> - deaths in Mexico</li>
-<li><a href="https://github.com/hadley/data-movies">data-movies</a> and <a href="https://cran.r-project.org/web/packages/ggplot2movies/">ggplotmovies</a> - data from the Internet Movie Database (IMDB)</li>
-<li><a href="https://github.com/hadley/pop-flows">pop-flows</a> - Population flows around the USA in 2008</li>
-<li><a href="https://github.com/hadley/data-housing-crisis">data-housing-crisis</a> - Clean data related to the 2008 US housing crisis</li>
-<li><a href="https://github.com/NYTimes/gunsales">gun-sales</a> - Statistical analysis of monthly background checks of gun purchases from NY times</li>
-<li><a href="https://github.com/rich-iannone/stationaRy">stationaRy</a> - hourly meteorological data from one of thousands of global stations</li>
-<li><a href="https://github.com/jennybc/gapminder">gapminder</a> - Excerpt from the Gapminder data</li>
-<li><a href="https://github.com/juliasilge/janeaustenr">janeaustenr</a> - Jane Austen’s Complete Novels</li>
 </ul>
 </div>
 </div>
@@ -505,6 +488,10 @@ dbDisconnect(db)</code></pre>
 <div id="datan-lukeminen-tilastotietokantojen-rajapinnoista" class="section level2">
 <h2><span class="header-section-number">3.3</span> Datan lukeminen tilastotietokantojen rajapinnoista</h2>
 <ul>
+<li>UseR2016: Karthik Ram, Garrett Grolemund and Scott Chamberlain: Extracting data from the web APIs and beyond <a href="https://github.com/ropensci/user2016-tutorial#extracting-data-from-the-web-apis-and-beyond" class="uri">https://github.com/ropensci/user2016-tutorial#extracting-data-from-the-web-apis-and-beyond</a>
+<ul>
+<li>pdf <a href="https://github.com/ropensci/user2016-tutorial/raw/master/slides.pdf" class="uri">https://github.com/ropensci/user2016-tutorial/raw/master/slides.pdf</a></li>
+</ul></li>
 <li><a href="https://cran.r-project.org/web/packages/sotkanet/index.html">sotkanet</a> Tools for Sotkanet Open Data Portal</li>
 <li><a href="https://cran.r-project.org/web/packages/pxweb/index.html">pxweb</a> R Interface to the PX-Web/PC-Axis API (Tilastokeskus, Statistics Sweden etc.)</li>
 <li><a href="https://cran.r-project.org/web/packages/eurostat/index.html">eurostat</a> Tools to download data from the Eurostat database <a href="http://ec.europa.eu/eurostat" class="uri">http://ec.europa.eu/eurostat</a> together with search and manipulation utilities.</li>
@@ -521,6 +508,237 @@ dbDisconnect(db)</code></pre>
 <li><a href="https://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html">Selectorgadget</a></li>
 </ul></li>
 </ul>
+<pre class="r"><code>library(httr)
+x &lt;- httr::GET(&quot;http://vetu.kapsi.fi/webbi/&quot;)
+x$status_code</code></pre>
+<pre><code>## [1] 200</code></pre>
+<pre class="r"><code>x$headers</code></pre>
+<pre><code>## $date
+## [1] &quot;Tue, 09 Aug 2016 13:28:08 GMT&quot;
+## 
+## $server
+## [1] &quot;Apache/2.4&quot;
+## 
+## $link
+## [1] &quot;&lt;http://vetu.kapsi.fi/webbi/wp-json/&gt;; rel=\&quot;https://api.w.org/\&quot;, &lt;http://vetu.kapsi.fi/webbi/&gt;; rel=shortlink&quot;
+## 
+## $vary
+## [1] &quot;Accept-Encoding&quot;
+## 
+## $`content-encoding`
+## [1] &quot;gzip&quot;
+## 
+## $`content-length`
+## [1] &quot;4513&quot;
+## 
+## $`content-type`
+## [1] &quot;text/html; charset=UTF-8&quot;
+## 
+## $`set-cookie`
+## [1] &quot;SERVERID=web2; path=/&quot;
+## 
+## attr(,&quot;class&quot;)
+## [1] &quot;insensitive&quot; &quot;list&quot;</code></pre>
+<pre class="r"><code># x$content</code></pre>
+<pre class="r"><code>httr::GET(&quot;https://httpbin.org/get&quot;)</code></pre>
+<pre><code>## Response [https://httpbin.org/get]
+##   Date: 2016-08-09 13:28
+##   Status: 200
+##   Content-Type: application/json
+##   Size: 298 B
+## {
+##   &quot;args&quot;: {}, 
+##   &quot;headers&quot;: {
+##     &quot;Accept&quot;: &quot;application/json, text/xml, application/xml, */*&quot;, 
+##     &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;, 
+##     &quot;Host&quot;: &quot;httpbin.org&quot;, 
+##     &quot;User-Agent&quot;: &quot;libcurl/7.47.0 r-curl/1.1 httr/1.2.1&quot;
+##   }, 
+##   &quot;origin&quot;: &quot;37.219.200.78&quot;, 
+##   &quot;url&quot;: &quot;https://httpbin.org/get&quot;
+## ...</code></pre>
+<pre class="r"><code>x &lt;- httr::GET(&quot;https://httpbin.org/get&quot;, query = list(a = 5))
+x &lt;- httr::GET(&quot;https://httpbin.org/get&quot;, add_headers(wave = &quot;hi&quot;))
+x &lt;- httr::POST(&quot;https://httpbin.org/post&quot;, body = list(a = 5))
+x</code></pre>
+<pre><code>## Response [https://httpbin.org/post]
+##   Date: 2016-08-09 13:28
+##   Status: 200
+##   Content-Type: application/json
+##   Size: 503 B
+## {
+##   &quot;args&quot;: {}, 
+##   &quot;data&quot;: &quot;&quot;, 
+##   &quot;files&quot;: {}, 
+##   &quot;form&quot;: {
+##     &quot;a&quot;: &quot;5&quot;
+##   }, 
+##   &quot;headers&quot;: {
+##     &quot;Accept&quot;: &quot;application/json, text/xml, application/xml, */*&quot;, 
+##     &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;, 
+## ...</code></pre>
+<pre class="r"><code>httr::POST(&quot;https://httpbin.org/post&quot;)</code></pre>
+<pre><code>## Response [https://httpbin.org/post]
+##   Date: 2016-08-09 13:28
+##   Status: 200
+##   Content-Type: application/json
+##   Size: 390 B
+## {
+##   &quot;args&quot;: {}, 
+##   &quot;data&quot;: &quot;&quot;, 
+##   &quot;files&quot;: {}, 
+##   &quot;form&quot;: {}, 
+##   &quot;headers&quot;: {
+##     &quot;Accept&quot;: &quot;application/json, text/xml, application/xml, */*&quot;, 
+##     &quot;Accept-Encoding&quot;: &quot;gzip, deflate&quot;, 
+##     &quot;Content-Length&quot;: &quot;0&quot;, 
+##     &quot;Host&quot;: &quot;httpbin.org&quot;, 
+## ...</code></pre>
+<pre class="r"><code>z &lt;- httr::GET(&quot;http://httpbin.org/get&quot;)
+code &lt;- z$status
+httr::http_status(code)</code></pre>
+<pre><code>## $category
+## [1] &quot;Success&quot;
+## 
+## $reason
+## [1] &quot;OK&quot;
+## 
+## $message
+## [1] &quot;Success: (200) OK&quot;</code></pre>
+<pre class="r"><code>z &lt;- httr::GET(&quot;http://httpbin.org/status/200&quot;)</code></pre>
+<pre class="r"><code>library(jsonlite)
+fromJSON(&#39;{&quot;foo&quot;:&quot;bar&quot;}&#39;)</code></pre>
+<pre><code>## $foo
+## [1] &quot;bar&quot;</code></pre>
+<pre class="r"><code>fromJSON(&#39;{&quot;foo&quot;:&quot;bar&quot;}&#39;, FALSE)</code></pre>
+<pre><code>## $foo
+## [1] &quot;bar&quot;</code></pre>
+<pre class="r"><code>fromJSON(&#39;[{&quot;foo&quot;:&quot;bar&quot;,&quot;hello&quot;:&quot;world&quot;}]&#39;)</code></pre>
+<pre><code>##   foo hello
+## 1 bar world</code></pre>
+<pre class="r"><code>library(xml2)
+res &lt;- read_xml(&#39;&lt;foo&gt;bar&lt;/foo&gt;&#39;)
+xml_name(res)</code></pre>
+<pre><code>## [1] &quot;foo&quot;</code></pre>
+<pre class="r"><code>xml_text(res)</code></pre>
+<pre><code>## [1] &quot;bar&quot;</code></pre>
+<pre class="r"><code>j1 &lt;- GET(&quot;http://www.omdbapi.com/?t=iron%20man%202&amp;r=json&quot;)
+content(j1, as = &#39;text&#39;)</code></pre>
+<pre><code>## [1] &quot;{\&quot;Title\&quot;:\&quot;Iron Man 2\&quot;,\&quot;Year\&quot;:\&quot;2010\&quot;,\&quot;Rated\&quot;:\&quot;PG-13\&quot;,\&quot;Released\&quot;:\&quot;07 May 2010\&quot;,\&quot;Runtime\&quot;:\&quot;124 min\&quot;,\&quot;Genre\&quot;:\&quot;Action, Adventure, Sci-Fi\&quot;,\&quot;Director\&quot;:\&quot;Jon Favreau\&quot;,\&quot;Writer\&quot;:\&quot;Justin Theroux (screenplay), Stan Lee (Marvel comic book), Don Heck (Marvel comic book), Larry Lieber (Marvel comic book), Jack Kirby (Marvel comic book)\&quot;,\&quot;Actors\&quot;:\&quot;Robert Downey Jr., Gwyneth Paltrow, Don Cheadle, Scarlett Johansson\&quot;,\&quot;Plot\&quot;:\&quot;With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father&#39;s legacy.\&quot;,\&quot;Language\&quot;:\&quot;English, French, Russian\&quot;,\&quot;Country\&quot;:\&quot;USA\&quot;,\&quot;Awards\&quot;:\&quot;Nominated for 1 Oscar. Another 7 wins &amp; 40 nominations.\&quot;,\&quot;Poster\&quot;:\&quot;http://ia.media-imdb.com/images/M/MV5BMTM0MDgwNjMyMl5BMl5BanBnXkFtZTcwNTg3NzAzMw@@._V1_SX300.jpg\&quot;,\&quot;Metascore\&quot;:\&quot;57\&quot;,\&quot;imdbRating\&quot;:\&quot;7.0\&quot;,\&quot;imdbVotes\&quot;:\&quot;521,017\&quot;,\&quot;imdbID\&quot;:\&quot;tt1228705\&quot;,\&quot;Type\&quot;:\&quot;movie\&quot;,\&quot;Response\&quot;:\&quot;True\&quot;}&quot;</code></pre>
+<pre class="r"><code>content(j1, as = &#39;parsed&#39;)</code></pre>
+<pre><code>## $Title
+## [1] &quot;Iron Man 2&quot;
+## 
+## $Year
+## [1] &quot;2010&quot;
+## 
+## $Rated
+## [1] &quot;PG-13&quot;
+## 
+## $Released
+## [1] &quot;07 May 2010&quot;
+## 
+## $Runtime
+## [1] &quot;124 min&quot;
+## 
+## $Genre
+## [1] &quot;Action, Adventure, Sci-Fi&quot;
+## 
+## $Director
+## [1] &quot;Jon Favreau&quot;
+## 
+## $Writer
+## [1] &quot;Justin Theroux (screenplay), Stan Lee (Marvel comic book), Don Heck (Marvel comic book), Larry Lieber (Marvel comic book), Jack Kirby (Marvel comic book)&quot;
+## 
+## $Actors
+## [1] &quot;Robert Downey Jr., Gwyneth Paltrow, Don Cheadle, Scarlett Johansson&quot;
+## 
+## $Plot
+## [1] &quot;With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father&#39;s legacy.&quot;
+## 
+## $Language
+## [1] &quot;English, French, Russian&quot;
+## 
+## $Country
+## [1] &quot;USA&quot;
+## 
+## $Awards
+## [1] &quot;Nominated for 1 Oscar. Another 7 wins &amp; 40 nominations.&quot;
+## 
+## $Poster
+## [1] &quot;http://ia.media-imdb.com/images/M/MV5BMTM0MDgwNjMyMl5BMl5BanBnXkFtZTcwNTg3NzAzMw@@._V1_SX300.jpg&quot;
+## 
+## $Metascore
+## [1] &quot;57&quot;
+## 
+## $imdbRating
+## [1] &quot;7.0&quot;
+## 
+## $imdbVotes
+## [1] &quot;521,017&quot;
+## 
+## $imdbID
+## [1] &quot;tt1228705&quot;
+## 
+## $Type
+## [1] &quot;movie&quot;
+## 
+## $Response
+## [1] &quot;True&quot;</code></pre>
+<pre class="r"><code>x1 = GET(&#39;http://www.omdbapi.com/?t=iron%20man%202&amp;r=xml&#39;)
+content(x1, as = &#39;text&#39;)</code></pre>
+<pre><code>## [1] &quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;&lt;root response=\&quot;True\&quot;&gt;&lt;movie title=\&quot;Iron Man 2\&quot; year=\&quot;2010\&quot; rated=\&quot;PG-13\&quot; released=\&quot;07 May 2010\&quot; runtime=\&quot;124 min\&quot; genre=\&quot;Action, Adventure, Sci-Fi\&quot; director=\&quot;Jon Favreau\&quot; writer=\&quot;Justin Theroux (screenplay), Stan Lee (Marvel comic book), Don Heck (Marvel comic book), Larry Lieber (Marvel comic book), Jack Kirby (Marvel comic book)\&quot; actors=\&quot;Robert Downey Jr., Gwyneth Paltrow, Don Cheadle, Scarlett Johansson\&quot; plot=\&quot;With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father&#39;s legacy.\&quot; language=\&quot;English, French, Russian\&quot; country=\&quot;USA\&quot; awards=\&quot;Nominated for 1 Oscar. Another 7 wins &amp;amp; 40 nominations.\&quot; poster=\&quot;http://ia.media-imdb.com/images/M/MV5BMTM0MDgwNjMyMl5BMl5BanBnXkFtZTcwNTg3NzAzMw@@._V1_SX300.jpg\&quot; metascore=\&quot;57\&quot; imdbRating=\&quot;7.0\&quot; imdbVotes=\&quot;521,017\&quot; imdbID=\&quot;tt1228705\&quot; type=\&quot;movie\&quot;/&gt;&lt;/root&gt;&quot;</code></pre>
+<pre class="r"><code>content(x1, as = &#39;parsed&#39;)</code></pre>
+<pre><code>## {xml_document}
+## &lt;root response=&quot;True&quot;&gt;
+## [1] &lt;movie title=&quot;Iron Man 2&quot; year=&quot;2010&quot; rated=&quot;PG-13&quot; released=&quot;07 May ...</code></pre>
+<pre class="r"><code>web_call &lt;- GET(&#39;http://swapi.co/api/planets/1/&#39;)
+web_call</code></pre>
+<pre><code>## Response [http://swapi.co/api/planets/1/]
+##   Date: 2016-08-09 13:28
+##   Status: 200
+##   Content-Type: application/json
+##   Size: 805 B</code></pre>
+<pre class="r"><code>web_call &lt;- GET(&#39;api.randomuser.me&#39;)
+web_call</code></pre>
+<pre><code>## Response [http://api.randomuser.me/]
+##   Date: 2016-08-09 13:28
+##   Status: 200
+##   Content-Type: application/json; charset=utf-8
+##   Size: 863 B</code></pre>
+<pre class="r"><code>web_call &lt;- GET(&#39;api.openweathermap.org/data/2.5/forecast?id=524901&#39;)
+web_call</code></pre>
+<pre><code>## Response [http://api.openweathermap.org/data/2.5/forecast?id=524901]
+##   Date: 2016-08-09 13:28
+##   Status: 401
+##   Content-Type: application/json; charset=utf-8
+##   Size: 107 B</code></pre>
+<pre class="r"><code>person &lt;- GET(&#39;api.randomuser.me&#39;)
+txt &lt;- content(person, as = &quot;text&quot;)
+prsd &lt;- content(person, as = &quot;parsed&quot;)
+
+
+# monta
+num_results &lt;- 5
+args &lt;- list(results = num_results)
+random_names &lt;- GET(&quot;http://api.randomuser.me/&quot;, query = args)
+output &lt;- content(random_names, as = &#39;parsed&#39;)
+length(output$results)</code></pre>
+<pre><code>## [1] 5</code></pre>
+<pre class="r"><code>output$results[[1]]$email</code></pre>
+<pre><code>## [1] &quot;jesse.korpela@example.com&quot;</code></pre>
+<pre class="r"><code>args &lt;- list(results = 5)
+random_names &lt;- GET(&quot;http://api.randomuser.me/&quot;, query = args)
+output &lt;- content(random_names, as = &#39;parsed&#39;)
+length(output$results)</code></pre>
+<pre><code>## [1] 5</code></pre>
+<pre class="r"><code>args &lt;- list(gender=&quot;female&quot;,results=10,format=&quot;csv&quot;)
+random_names &lt;- GET(&quot;http://api.randomuser.me/&quot;, query = args)
+output &lt;- content(random_names, as = &#39;parsed&#39;)
+length(output$results)</code></pre>
+<pre><code>## [1] 0</code></pre>
+<pre class="r"><code>output$results[[2]]$email</code></pre>
+<pre><code>## NULL</code></pre>
 </div>
 </div>
 <div id="harjoitus-1" class="section level1">
@@ -534,6 +752,31 @@ dbDisconnect(db)</code></pre>
 </div>
 <div id="kotitehtava" class="section level1">
 <h1><span class="header-section-number">7</span> Kotitehtävä</h1>
+<hr />
+</div>
+<div id="datapaketteja" class="section level1">
+<h1><span class="header-section-number">8</span> Datapaketteja</h1>
+<p>These packages contain data sets to use as training data or toy examples.</p>
+<ul>
+<li><a href="https://github.com/hadley/babynames">babynames</a> - Names given to US babies 1880-2014</li>
+<li><a href="https://github.com/hadley/neiss">neiss</a> - sample of all accidents reported to US emergency rooms 2009-2014</li>
+<li><a href="https://github.com/hadley/yrbss">yrbss</a> - Youth Risk Behaviour Surveillance System data from 1991 to 2013</li>
+<li><a href="https://github.com/hadley/nycflights13">nycflights13</a> - all out-bound flights from NYC in 2013</li>
+<li><a href="https://github.com/hadley/hflights">hflights</a> - flights departing Houston in 2011</li>
+<li><a href="https://github.com/ropensci/USAboundaries">USAboundaries</a> - Historical and Contemporary Boundaries of the United States of America</li>
+<li><a href="https://github.com/AndySouth/rworldmap">rworldmap</a> - country border data</li>
+<li><a href="https://github.com/hadley/usdanutrients">usdanutrients</a> - USDA nutrient database</li>
+<li><a href="https://github.com/hadley/fueleconomy">fueleconomy</a> - EPA fuel economy data</li>
+<li><a href="https://github.com/hadley/nasaweather">nasaweather</a> - geographic and atmospheric measures on a very coarse 24 by 24 grid covering Central America</li>
+<li><a href="https://github.com/hadley/mexico-mortality">mexico-mortality</a> - deaths in Mexico</li>
+<li><a href="https://github.com/hadley/data-movies">data-movies</a> and <a href="https://cran.r-project.org/web/packages/ggplot2movies/">ggplotmovies</a> - data from the Internet Movie Database (IMDB)</li>
+<li><a href="https://github.com/hadley/pop-flows">pop-flows</a> - Population flows around the USA in 2008</li>
+<li><a href="https://github.com/hadley/data-housing-crisis">data-housing-crisis</a> - Clean data related to the 2008 US housing crisis</li>
+<li><a href="https://github.com/NYTimes/gunsales">gun-sales</a> - Statistical analysis of monthly background checks of gun purchases from NY times</li>
+<li><a href="https://github.com/rich-iannone/stationaRy">stationaRy</a> - hourly meteorological data from one of thousands of global stations</li>
+<li><a href="https://github.com/jennybc/gapminder">gapminder</a> - Excerpt from the Gapminder data</li>
+<li><a href="https://github.com/juliasilge/janeaustenr">janeaustenr</a> - Jane Austen’s Complete Novels</li>
+</ul>
 </div>
 
 <br>

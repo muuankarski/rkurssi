@@ -8,6 +8,18 @@ output:
     code_folding: show
 ---
 
+```{r setup}
+library(knitr)
+knitr::opts_chunk$set(list(echo=TRUE,
+                           eval=TRUE,
+                           cache=TRUE,
+                           warning=FALSE,
+                           message=FALSE))
+opts_chunk$set(fig.width = 10, fig.height = 6)
+```
+
+
+
 # Paketit
 
 
@@ -31,29 +43,6 @@ output:
 - Getting Data into R <https://vimeo.com/130548869> 0.00 -> 
 
 
-
-## Datapaketteja
-
-These packages contain data sets to use as training data or toy examples.
-
-* [babynames](https://github.com/hadley/babynames) - Names given to US babies 1880-2014
-* [neiss](https://github.com/hadley/neiss) - sample of all accidents reported to US emergency rooms 2009-2014
-* [yrbss](https://github.com/hadley/yrbss) - Youth Risk Behaviour Surveillance System data from 1991 to 2013
-* [nycflights13](https://github.com/hadley/nycflights13) - all out-bound flights from NYC in 2013
-* [hflights](https://github.com/hadley/hflights) - flights departing Houston in 2011
-* [USAboundaries](https://github.com/ropensci/USAboundaries) - Historical and Contemporary Boundaries of the United States of America
-* [rworldmap](https://github.com/AndySouth/rworldmap) - country border data
-* [usdanutrients](https://github.com/hadley/usdanutrients) - USDA nutrient database
-* [fueleconomy](https://github.com/hadley/fueleconomy) - EPA fuel economy data
-* [nasaweather](https://github.com/hadley/nasaweather) - geographic and atmospheric measures on a very coarse 24 by 24 grid covering Central America
-* [mexico-mortality](https://github.com/hadley/mexico-mortality) - deaths in Mexico
-* [data-movies](https://github.com/hadley/data-movies) and [ggplotmovies](https://cran.r-project.org/web/packages/ggplot2movies/) - data from the Internet Movie Database (IMDB)
-* [pop-flows](https://github.com/hadley/pop-flows) - Population flows around the USA in 2008
-* [data-housing-crisis](https://github.com/hadley/data-housing-crisis) - Clean data related to the 2008 US housing crisis
-* [gun-sales](https://github.com/NYTimes/gunsales) - Statistical analysis of monthly background checks of gun purchases from NY times
-* [stationaRy](https://github.com/rich-iannone/stationaRy) - hourly meteorological data from one of thousands of global stations
-* [gapminder](https://github.com/jennybc/gapminder) - Excerpt from the Gapminder data
-* [janeaustenr](https://github.com/juliasilge/janeaustenr) - Jane Austen's Complete Novels
 
 
 
@@ -121,6 +110,11 @@ dbDisconnect(db)
 
 ## Datan lukeminen tilastotietokantojen rajapinnoista
 
+
+- UseR2016: Karthik Ram, Garrett Grolemund and Scott Chamberlain: Extracting data from the web APIs and beyond <https://github.com/ropensci/user2016-tutorial#extracting-data-from-the-web-apis-and-beyond>
+    - pdf <https://github.com/ropensci/user2016-tutorial/raw/master/slides.pdf>
+
+
 - [sotkanet](https://cran.r-project.org/web/packages/sotkanet/index.html) Tools for Sotkanet Open Data Portal
 - [pxweb](https://cran.r-project.org/web/packages/pxweb/index.html) R Interface to the PX-Web/PC-Axis API (Tilastokeskus, Statistics Sweden etc.)
 - [eurostat](https://cran.r-project.org/web/packages/eurostat/index.html) Tools to download data from the Eurostat database <http://ec.europa.eu/eurostat> together with search and manipulation utilities.
@@ -135,7 +129,121 @@ dbDisconnect(db)
     - [Selectorgadget](https://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html)
 
 
+```{r rvest}
+library(httr)
+x <- httr::GET("http://vetu.kapsi.fi/webbi/")
+x$status_code
+x$headers
+# x$content
+```
+
+```{r get}
+
+httr::GET("https://httpbin.org/get")
+
+x <- httr::GET("https://httpbin.org/get", query = list(a = 5))
+x <- httr::GET("https://httpbin.org/get", add_headers(wave = "hi"))
+x <- httr::POST("https://httpbin.org/post", body = list(a = 5))
+x
+```
+
+
+```{r post}
+httr::POST("https://httpbin.org/post")
+```
+
+```{r getget}
+z <- httr::GET("http://httpbin.org/get")
+code <- z$status
+httr::http_status(code)
+
+z <- httr::GET("http://httpbin.org/status/200")
+
+```
+
+
+```{r json}
+library(jsonlite)
+fromJSON('{"foo":"bar"}')
+fromJSON('{"foo":"bar"}', FALSE)
+fromJSON('[{"foo":"bar","hello":"world"}]')
+
+```
+
+
+```{r xmlxml}
+library(xml2)
+res <- read_xml('<foo>bar</foo>')
+xml_name(res)
+xml_text(res)
+
+```
+
+
+```{r imbd}
+j1 <- GET("http://www.omdbapi.com/?t=iron%20man%202&r=json")
+content(j1, as = 'text')
+content(j1, as = 'parsed')
+```
+
+
+```{r xml}
+x1 = GET('http://www.omdbapi.com/?t=iron%20man%202&r=xml')
+content(x1, as = 'text')
+content(x1, as = 'parsed')
+```
+
+
+```{r webcall}
+web_call <- GET('http://swapi.co/api/planets/1/')
+web_call
+```
+
+```{r apiapi}
+web_call <- GET('api.randomuser.me')
+web_call
+
+web_call <- GET('api.openweathermap.org/data/2.5/forecast?id=524901')
+web_call
+
+```
+
+
+```{r apiapiapi}
+person <- GET('api.randomuser.me')
+txt <- content(person, as = "text")
+prsd <- content(person, as = "parsed")
+
+
+# monta
+num_results <- 5
+args <- list(results = num_results)
+random_names <- GET("http://api.randomuser.me/", query = args)
+output <- content(random_names, as = 'parsed')
+length(output$results)
+
+output$results[[1]]$email
+
+args <- list(results = 5)
+random_names <- GET("http://api.randomuser.me/", query = args)
+output <- content(random_names, as = 'parsed')
+length(output$results)
+
+args <- list(gender="female",results=10,format="csv")
+random_names <- GET("http://api.randomuser.me/", query = args)
+output <- content(random_names, as = 'parsed')
+length(output$results)
+
+output$results[[2]]$email
+
+
+```
+
+
+
 # Harjoitus 1
+
+
 
 
 # Harjoitus 2
@@ -145,3 +253,31 @@ dbDisconnect(db)
 
 
 # Kotitehtävä
+
+
+
+----
+
+
+# Datapaketteja
+
+These packages contain data sets to use as training data or toy examples.
+
+* [babynames](https://github.com/hadley/babynames) - Names given to US babies 1880-2014
+* [neiss](https://github.com/hadley/neiss) - sample of all accidents reported to US emergency rooms 2009-2014
+* [yrbss](https://github.com/hadley/yrbss) - Youth Risk Behaviour Surveillance System data from 1991 to 2013
+* [nycflights13](https://github.com/hadley/nycflights13) - all out-bound flights from NYC in 2013
+* [hflights](https://github.com/hadley/hflights) - flights departing Houston in 2011
+* [USAboundaries](https://github.com/ropensci/USAboundaries) - Historical and Contemporary Boundaries of the United States of America
+* [rworldmap](https://github.com/AndySouth/rworldmap) - country border data
+* [usdanutrients](https://github.com/hadley/usdanutrients) - USDA nutrient database
+* [fueleconomy](https://github.com/hadley/fueleconomy) - EPA fuel economy data
+* [nasaweather](https://github.com/hadley/nasaweather) - geographic and atmospheric measures on a very coarse 24 by 24 grid covering Central America
+* [mexico-mortality](https://github.com/hadley/mexico-mortality) - deaths in Mexico
+* [data-movies](https://github.com/hadley/data-movies) and [ggplotmovies](https://cran.r-project.org/web/packages/ggplot2movies/) - data from the Internet Movie Database (IMDB)
+* [pop-flows](https://github.com/hadley/pop-flows) - Population flows around the USA in 2008
+* [data-housing-crisis](https://github.com/hadley/data-housing-crisis) - Clean data related to the 2008 US housing crisis
+* [gun-sales](https://github.com/NYTimes/gunsales) - Statistical analysis of monthly background checks of gun purchases from NY times
+* [stationaRy](https://github.com/rich-iannone/stationaRy) - hourly meteorological data from one of thousands of global stations
+* [gapminder](https://github.com/jennybc/gapminder) - Excerpt from the Gapminder data
+* [janeaustenr](https://github.com/juliasilge/janeaustenr) - Jane Austen's Complete Novels
